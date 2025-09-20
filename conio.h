@@ -47,7 +47,9 @@
 
 //#include <sys/cdefs.h>
 #include "TurboC.h"
+#ifdef WITH_X
 #include "graphics.h"
+#endif
 
 //----------------------------------------------------------------------------
 // Constants.
