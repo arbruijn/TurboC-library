@@ -89,5 +89,14 @@ kbhit (void)
 	  return (1);
 	}
     }
+  else
+    {
+      fd_set rd;
+      struct timeval timeout;
+      timeout.tv_sec = timeout.tv_usec = 0;
+      FD_ZERO(&rd);
+      FD_SET(0, &rd);
+      return select(1, &rd, NULL, NULL, &timeout) == 1 ? 1 : 0;
+    }
   return (0);
 }

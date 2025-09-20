@@ -136,6 +136,9 @@ getchTurbo (void)
   int KeyCode;
   int EscapeSequence[MAX_ESCAPE_SEQUENCE], NumEscapeSequence = 0;
 
+  if (!ConioInitialized)
+    return getchar();
+
   //if (!ConioInitialized)
   //  textmode (LASTMODE);
 
