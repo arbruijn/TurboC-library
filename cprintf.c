@@ -28,6 +28,8 @@
 
 static char StringBuffer[1024];
 
+int factor;
+
 int
 cprintf (const char *format, ...)
 {
