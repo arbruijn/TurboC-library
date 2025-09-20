@@ -24,6 +24,7 @@
   		03/02/02 RSB	Made sizes of colors explicit.
 */
 
+#include "tcintern.h"
 #include "conio.h"
 
 // Translates conio foreground/background colors to ncurses colors.

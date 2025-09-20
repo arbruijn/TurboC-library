@@ -209,21 +209,13 @@ extern void _setcursortype (int cur_t);
 // So we want to use macros to redefine what they mean when encountered
 // in the Turbo C code.  However, we provide NEW functions (getchNcurses
 // and ungetchNcurses) to provide the ncurses functionality.
-static inline int
-getchNcurses (void)
-{
-  return (getch ());
-}
 extern int getchTurbo (void);
 #ifdef getch
 #undef getch
 #endif
 #define getch getchTurbo
-static inline void
-ungetchNcurses (int c)
-{
-  ungetch (c);
-}
+#ifdef TC
+#endif
 extern int ungetchTurbo (int c);
 #ifdef ungetch
 #undef ungetch
@@ -263,7 +255,6 @@ extern gint TcKeybufStart, TcKeybufSize;
 extern pthread_mutex_t TcMutex;
 extern int ConioInitialized;
 extern struct text_info CurrentAttributes;
-extern WINDOW *CurrentWindow;
 extern int ColorPairsUsed;
 extern int ConioRefreshOkay;
 #endif // TURBOC_VARIABLES_C

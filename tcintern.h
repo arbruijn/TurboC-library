@@ -1,6 +1,6 @@
 /*
   TurboC, a library for porting Borland Turbo C to GNU gcc.
-  Copyright 2002 Ronald S. Burkey
+  Copyright 2002,2010 Ronald S. Burkey
  
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -17,21 +17,24 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
   
   Contact Ron Burkey at info@sandroid.org.
-
-  Filename:	delline.c
-  Purpose:	A Turbo C conio function.
-  Mod history:	01/31/02 RSB	Created, as stub.
-  		03/21/02 RSB	Added actual code.
 */
+#ifndef _INCLUDED_TCINTERN_H
+#define _INCLUDED_TCINTERN_H
 
-#include "tcintern.h"
-#include "conio.h"
+#include <ncurses.h>
 
-void
-delline (void)
+extern WINDOW *CurrentWindow;
+
+static inline int
+getchNcurses (void)
 {
-  if (!ConioInitialized)
-    textmode (LASTMODE);
-  wdeleteln (CurrentWindow);
-  wrefresh (CurrentWindow);
+  return (getch ());
 }
+
+static inline void
+ungetchNcurses (int c)
+{
+  ungetch (c);
+}
+
+#endif

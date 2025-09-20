@@ -32,6 +32,7 @@
 				getting input from the graphics window.						
 */
 
+#include "tcintern.h"
 #include <stdio.h>
 #include "conio.h"
 #include "fnkeys.h"

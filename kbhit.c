@@ -25,6 +25,7 @@
 				keyboard input from the graphics window.
 */
 
+#include "tcintern.h"
 #include <pthread.h>
 #include "graphics.h"
 #include "conio.h"

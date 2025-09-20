@@ -27,6 +27,7 @@
   or not.  The only file in which they aren't extern is this one.
 */
 
+#include "tcintern.h"
 #define TURBOC_VARIABLES_C
 
 // All of the TurboC library header files follow.  Not all of them have

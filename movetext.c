@@ -26,6 +26,7 @@
 				at the end of the process.
 */
 
+#include "tcintern.h"
 #include "conio.h"
 
 int

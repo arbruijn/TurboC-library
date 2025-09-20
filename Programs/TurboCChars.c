@@ -1,3 +1,4 @@
+#include "tcintern.h"
 #include <conio.h>
 #include <fnkeys.h>
 

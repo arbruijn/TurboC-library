@@ -23,6 +23,7 @@
   Mod history:	01/31/02 RSB	Created.
 */
 
+#include "tcintern.h"
 #include "conio.h"
 
 //----------------------------------------------------------------------

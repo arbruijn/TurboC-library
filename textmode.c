@@ -41,6 +41,7 @@
 				Hopefully fixed here.
 */
 
+#include "tcintern.h"
 //#include <termios.h>
 #include <stdlib.h>
 #include <signal.h>
