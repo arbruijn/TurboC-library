@@ -34,6 +34,6 @@
 #define farmalloc malloc
 #define farcalloc calloc
 #define farfree freeTurbo
-#define farcoreleft() 0x80000
+#define farcoreleft() (10*65536-16384)
 
 #endif // _INCLUDED_ALLOC_H
