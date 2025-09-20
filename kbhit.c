@@ -74,11 +74,13 @@ TcExtractKeybuf (char *c)
 int
 kbhit (void)
 {
+#ifdef WITH_X
   if (TcGraphicsInitialized)
     {
       if (TcKeybufSize > 0)
 	return (1);
     }
+#endif
   if (ConioInitialized)
     {
       int KeyCode;
