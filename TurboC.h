@@ -57,7 +57,6 @@
 // included *after* this one) need to be included before integer datatypes
 // are redefined.
 #include <sys/cdefs.h>
-#include <ncurses.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

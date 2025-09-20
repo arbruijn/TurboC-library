@@ -33,6 +33,7 @@
 
 #ifdef TEST_TURBOC
 
+#include "tcintern.h"
 #include "conio.h"
 #include "fnkeys.h"
 #include "dir.h"

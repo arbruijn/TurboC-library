@@ -39,6 +39,7 @@
   translated.
 */
 
+#include "tcintern.h"
 #include "conio.h"
 
 extern const int32_t ForegroundColors[16];

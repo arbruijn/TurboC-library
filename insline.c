@@ -24,6 +24,7 @@
   		03/21/02 RSB	Added actual code.
 */
 
+#include "tcintern.h"
 #include "conio.h"
 
 void

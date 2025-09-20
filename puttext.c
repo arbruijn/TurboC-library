@@ -30,6 +30,7 @@
 				function instead.
 */
 
+#include "tcintern.h"
 #include "conio.h"
 
 //------------------------------------------------------------------------

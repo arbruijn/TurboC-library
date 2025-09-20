@@ -3,6 +3,7 @@
   Justin Godden has sent me.
 */
 
+#include "tcintern.h"
 #include <conio.h>
 #include <fnkeys.h>
 
