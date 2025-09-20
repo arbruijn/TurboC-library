@@ -256,6 +256,10 @@ clockUnix (void)
 // Pointer modifiers that aren't needed.
 #define far
 #define huge
+#define near
+#define pascal
+#define cdecl
+#define _fastcall
 
 // The "free" function:  We could use the standard library function for 
 // almost all purposes ... except that we need to account for the sins of the 
