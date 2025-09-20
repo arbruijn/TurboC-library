@@ -206,6 +206,7 @@ stricmp (const char *s1, const char *s2)
 #else // strcasecmp
 #define strcmpi strcasecmp
 #define stricmp strcasecmp
+#define strnicmp strncasecmp
 #endif // strcasecmp
 
 #ifdef strncmp
