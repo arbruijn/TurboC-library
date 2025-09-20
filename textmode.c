@@ -348,11 +348,13 @@ InitializeTranslatedChar (void)
   TranslatedChar[(int) 0xf3] = ACS_LEQUAL;
   TranslatedChar[(int) 0xf8] = ACS_DEGREE;
   TranslatedChar[(int) 0xf9] = ACS_BULLET;
+#if 0
 #ifndef DoNotFixIntegers
 #define short int16_t
 #define int int16_t
 #define unsigned uint16_t
 #define long int32_t
+#endif
 #endif
 };
 

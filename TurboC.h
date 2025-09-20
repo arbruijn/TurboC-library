@@ -244,10 +244,12 @@ clockUnix (void)
 // happy property of handling the most commonly used integer datatype 
 // specifications (except "unsigned char"), while generating a compiler
 // error for all other combinations.
+#if 0
 #define short int16_t
 #define int int16_t
 #define unsigned uint16_t
 #define long int32_t
+#endif
 
 #endif // Compiler32
 
