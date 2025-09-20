@@ -669,7 +669,7 @@ extern Pixmap TcTile;
 
 #else // WITH_X
 
-#include <graphics.h>
+//#include <graphics.h>
 
 #endif // WITH_X
 
